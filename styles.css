@@ -38,6 +38,7 @@
   --text-light: #8A817A;
   --accent:     #2C2C2C;
   --gold-soft:  #B5956A;
+  --gold-btn:   #C4975A;
   --border:     #E2D9CF;
 
   --radius:     4px;
@@ -142,14 +143,15 @@ ul {
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: var(--white);
+  background: var(--gold-btn);
+  color: var(--text-dark);
   padding: 14px 32px;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background: #000;
+  background: #b5864a;
+  color: var(--text-dark);
   transform: translateY(-1px);
 }
 
@@ -220,9 +222,10 @@ ul {
    1. HERO
    ──────────────────────────────────────────────────────────── */
 .hero {
-  background: var(--cream);
+  background: var(--beige);
   padding-block: clamp(56px, 10vw, 120px);
   text-align: center;
+  border-bottom: 1px solid var(--beige-mid);
 }
 
 .hero-inner {
@@ -1071,4 +1074,125 @@ body {
 
 .cta-inner .trust-micro {
   margin-top: 24px;
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   HERO SUB ACCENT (bold key phrases)
+   ──────────────────────────────────────────────────────────── */
+.hero-sub-accent {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   GIFT TIERS (bonus section)
+   ──────────────────────────────────────────────────────────── */
+.gift-tiers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 560px) {
+  .gift-tiers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.gift-tier {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.gift-tier:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.gift-tier::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--beige-mid);
+}
+
+.gift-tier--premium::before {
+  background: var(--gold-btn);
+}
+
+.gift-tier-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  background: var(--beige);
+  border: 1px solid var(--beige-mid);
+  border-radius: 2px;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+}
+
+.gift-tier-badge--premium {
+  color: var(--text-dark);
+  background: #f5e8d4;
+  border-color: var(--gold-soft);
+}
+
+.gift-tier-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.gift-tier-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.gift-tier-text {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   SECTION CONTRAST IMPROVEMENTS
+   ──────────────────────────────────────────────────────────── */
+.section-title {
+  font-weight: 500;
+}
+
+.section-sub {
+  color: var(--text-mid);
+}
+
+.product-features li {
+  color: var(--text-dark);
+}
+
+.benefit-text {
+  color: var(--text-dark);
+}
+
+.bonus-content p {
+  color: var(--text-dark);
 }
