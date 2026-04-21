@@ -968,3 +968,107 @@ ul {
     padding: 12px 16px;
   }
 }
+
+/* ──────────────────────────────────────────────────────────── 
+   TYPOGRAPHY IMPROVEMENTS
+   ──────────────────────────────────────────────────────────── */
+body {
+  font-size: 16px;
+}
+
+.hero-headline {
+  font-weight: 500;
+  font-size: clamp(38px, 6.5vw, 68px);
+}
+
+.hero-sub {
+  font-size: clamp(16px, 2.2vw, 19px);
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   HERO — NEW ELEMENTS
+   ──────────────────────────────────────────────────────────── */
+.hero-support {
+  margin-top: 12px;
+  font-size: clamp(14px, 1.8vw, 16px);
+  color: var(--text-mid);
+  max-width: 520px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.hero-trust-note {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   CTA HINT TEXT (under every button)
+   ──────────────────────────────────────────────────────────── */
+.btn-hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-mid);
+  font-style: italic;
+  font-family: var(--font-serif);
+  max-width: 420px;
+  margin-inline: auto;
+  line-height: 1.55;
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   TRUST MICRO-BLOCK (⚡ lines)
+   ──────────────────────────────────────────────────────────── */
+.trust-micro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.trust-micro span {
+  font-size: 13px;
+  color: var(--text-mid);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Compact version inside product cards */
+.trust-micro--compact {
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.trust-micro--compact span {
+  font-size: 12px;
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   OFFER — URGENCY LINE
+   ──────────────────────────────────────────────────────────── */
+.offer-urgency {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gold-soft);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: -28px;
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+/* ──────────────────────────────────────────────────────────── 
+   CTA SECTION — hint and trust inside centred block
+   ──────────────────────────────────────────────────────────── */
+.cta-inner .btn-hint {
+  margin-top: 14px;
+}
+
+.cta-inner .trust-micro {
+  margin-top: 24px;
+}
