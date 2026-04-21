@@ -388,18 +388,19 @@ ul {
 }
 
 .ba-traits--before li::before {
-  content: '·';
+  content: '❌';
   position: absolute;
-  left: 2px;
-  color: var(--text-light);
+  left: 0;
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .ba-traits--after li::before {
-  content: '✓';
+  content: '✔️';
   position: absolute;
   left: 0;
-  color: var(--gold-soft);
   font-size: 11px;
+  line-height: 1.5;
 }
 
 .ba-divider {
@@ -548,13 +549,62 @@ ul {
 
 .product-pricing {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
   margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid var(--border);
+  flex-wrap: wrap;
 }
 
+.price-old-pill {
+  font-size: 14px;
+  color: var(--text-light);
+  background: var(--beige);
+  border: 1px solid var(--beige-mid);
+  border-radius: 100px;
+  padding: 4px 12px;
+  text-decoration: line-through;
+  text-decoration-color: var(--text-light);
+}
+
+.price-arrow-pill {
+  color: var(--beige-mid);
+  font-size: 16px;
+}
+
+.price-new-pill {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--red);
+  border-radius: 100px;
+  padding: 5px 16px;
+  letter-spacing: -0.01em;
+}
+
+.product-saving {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.saving-amount {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.saving-note {
+  font-size: 12px;
+  color: var(--text-mid);
+  font-style: italic;
+}
+
+/* Legacy price classes (kept for compatibility) */
 .price-old {
   font-size: 15px;
   color: var(--text-light);
@@ -593,9 +643,10 @@ ul {
 .benefit-item {
   text-align: center;
   padding: 28px 16px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--beige-mid);
   border-radius: var(--radius-md);
-  background: var(--cream);
+  background: var(--beige);
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
 }
 
 .benefit-icon {
@@ -944,6 +995,29 @@ ul {
   position: absolute;
   left: 0;
   color: var(--gold-soft);
+}
+
+.gift-tier-bonus {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--beige-mid);
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.55;
+}
+
+.gift-tier-bonus em {
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.gift-tier-bonus-icon {
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
 /* ──────────────────────────────────────────────────────────── 
