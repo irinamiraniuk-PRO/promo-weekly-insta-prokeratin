@@ -383,24 +383,24 @@ ul {
 .ba-traits li {
   font-size: 13px;
   color: var(--text-mid);
-  padding-left: 12px;
-  position: relative;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .ba-traits--before li::before {
   content: '❌';
-  position: absolute;
-  left: 0;
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 9px;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .ba-traits--after li::before {
   content: '✔️';
-  position: absolute;
-  left: 0;
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 9px;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .ba-divider {
