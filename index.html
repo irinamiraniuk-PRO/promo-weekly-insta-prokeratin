@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Акция недели в магазине Prokeratin — профессиональные кератиновые составы для мастеров по реконструкции волос. Беларусь." />
+  <title>Акция недели — Prokeratin</title>
+
+  <!-- Fonts: Cormorant Garamond (premium serif) + Inter (clean sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     ██████╗ ██████╗  ██████╗ ██╗  ██╗███████╗██████╗  █████╗ ████████╗██╗███╗   ██╗
+     ██╔══██╗██╔══██╗██╔═══██╗██║ ██╔╝██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║████╗  ██║
+     ██████╔╝██████╔╝██║   ██║█████╔╝ █████╗  ██████╔╝███████║   ██║   ██║██╔██╗ ██║
+     ██╔═══╝ ██╔══██╗██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗██╔══██║   ██║   ██║██║╚██╗██║
+     ██║     ██║  ██║╚██████╔╝██║  ██╗███████╗██║  ██║██║  ██║   ██║   ██║██║ ╚████║
+     ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝
+
+     ЕЖЕНЕДЕЛЬНЫЙ ШАБЛОН АКЦИИ — PROKERATIN
+     Изменяйте только значения в блоке «РЕДАКТИРУЕМЫЕ ДАННЫЕ» ниже.
+     Разметка и стили трогать не нужно.
+     ============================================================ -->
+
+<!-- ============================================================
+     ██████╗  █████╗ ████████╗ █████╗
+     ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗
+     ██║  ██║███████║   ██║   ███████║
+     ██║  ██║██╔══██║   ██║   ██╔══██║
+     ██████╔╝██║  ██║   ██║   ██║  ██║
+     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+
+     ВСЕ РЕДАКТИРУЕМЫЕ ДАННЫЕ — МЕНЯЙТЕ ТОЛЬКО ЗДЕСЬ
+     ============================================================
+
+  ДАТЫ АКЦИИ:
+    promo_end_date   = 2026-04-26T23:59:00   (используется в таймере)
+    promo_date_label = "до 26.04.2026"
+
+  ТОВАР 1:
+    product_1_name          = "BB Gloss Ultra"
+    product_1_volume        = "500 мл"
+    product_1_price_old     = "216 BYN"
+    product_1_price_new     = "172,80 BYN"
+    product_1_discount      = "−20%"
+    product_1_accent        = "для сложных волос и мощного выпрямления"
+
+  ТОВАР 2:
+    product_2_name          = "Happy Hair Oleo M Intensive"
+    product_2_volume        = "500 мл"
+    product_2_price_old     = "288 BYN"
+    product_2_price_new     = "230,40 BYN"
+    product_2_discount      = "−20%"
+    product_2_accent        = "идеален для клиентов, которые не хотят прилизанный эффект"
+
+  CTA ССЫЛКА:
+    cta_url = "https://ig.me/m/prokeratin_store"
+
+  ============================================================ -->
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  ШАПКА САЙТА / HEADER                   ║
+     ╚══════════════════════════════════════════╝ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">Prokeratin</a>
+    <!-- CHANGE HERE: header CTA link -->
+    <a href="https://instagram.com/prokeratin_store" target="_blank" rel="noopener" class="header-cta">
+      Написать в директ
+    </a>
+  </div>
+</header>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  1. HERO SECTION                         ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+
+    <!-- CHANGE HERE: promo badge date -->
+    <div class="promo-badge">Акция недели — до 26.04.2026</div>
+
+    <!-- CHANGE HERE: hero headline (pain-based hook) -->
+    <h1 class="hero-headline">
+      Устали искать составы,<br />которые приносят <span class="headline-accent">стабильный результат?</span>
+    </h1>
+
+    <!-- CHANGE HERE: hero subheadline -->
+    <p class="hero-sub">
+      Мы подобрали для вас составы, которые действительно держатся <strong class="hero-sub-accent">4–6 месяцев</strong> и дают <strong class="hero-sub-accent">стабильный результат</strong>
+    </p>
+
+    <!-- CHANGE HERE: CTA button link -->
+    <a href="https://instagram.com/prokeratin_store" target="_blank" rel="noopener" class="btn btn-primary btn-hero">
+      Написать «ХОЧУ» в директ
+    </a>
+
+    <!-- Instruction hint under CTA -->
+    <p class="btn-hint">Напишите «ХОЧУ» в директ — ответим в течение 5–10 минут и поможем подобрать состав под ваш тип волос</p>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  2. PRODUCTS BLOCK                       ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="products section-gap" id="products">
+  <div class="container">
+
+    <h2 class="section-title">Составы недели</h2>
+    <!-- CHANGE HERE: promo dates subtitle -->
+    <p class="section-sub">Специальные цены действуют до 26.04.2026</p>
+
+    <div class="products-grid">
+
+      <!-- ══════════════════════════════
+           ТОВАР 1
+           ══════════════════════════════ -->
+      <div class="product-card" data-animate>
+
+        <!-- CHANGE HERE: product 1 image -->
+        <div class="product-image-wrap">
+          <img src="foto_ultra_sostav.JPG" alt="BB Gloss Ultra — фото состава" class="product-image">
+          <!-- CHANGE HERE: product_1_discount -->
+          <div class="product-badge">−20%</div>
+        </div>
+
+        <div class="product-body">
+
+          <!-- CHANGE HERE: product_1_name + product_1_volume -->
+          <h3 class="product-name">BB Gloss Ultra <span class="product-volume">500 мл</span></h3>
+
+          <!-- CHANGE HERE: product_1_accent -->
+          <p class="product-accent">Сильный кератин — сложные волосы, мощное выпрямление</p>
+
+          <!-- CHANGE HERE: product_1 description items -->
+          <ul class="product-features">
+            <li><strong>Убирает «ёлку» на 100%</strong> — даже на самых сложных волосах</li>
+            <li>Улучшенный состав: +20% блеска и плотности</li>
+            <li>Питает, восстанавливает структуру</li>
+            <li>Для славянских волос с сильным завитком</li>
+            <li>Экономичный расход, комфортная работа</li>
+          </ul>
+
+          <!-- CHANGE HERE: product_1_price_old + product_1_price_new -->
+          <div class="product-pricing">
+            <span class="price-old-pill">216 BYN</span>
+            <span class="price-arrow-pill">→</span>
+            <span class="price-new-pill">172,80 BYN</span>
+          </div>
+          <div class="product-saving">
+            <span class="saving-amount">Вы экономите: 43,20 BYN</span>
+            <span class="saving-note">Экономия на ещё одном составе или уходе</span>
+          </div>
+
+          <!-- CHANGE HERE: CTA link -->
+          <a href="https://instagram.com/prokeratin_store" target="_blank" rel="noopener" class="btn btn-primary btn-product">
+            Написать «ХОЧУ» в директ
+          </a>
+
+        </div>
+      </div><!-- /product-card 1 -->
+
+
+      <!-- ══════════════════════════════
+           ТОВАР 2
+           ══════════════════════════════ -->
+      <div class="product-card" data-animate>
+
+        <!-- CHANGE HERE: product 2 image -->
+        <div class="product-image-wrap">
+          <img src="foto_oleo_sostav.PNG" alt="Happy Hair Oleo M — фото состава" class="product-image">
+          <!-- CHANGE HERE: product_2_discount -->
+          <div class="product-badge">−20%</div>
+        </div>
+
+        <div class="product-body">
+
+          <!-- CHANGE HERE: product_2_name + product_2_volume -->
+          <h3 class="product-name">Happy Hair Oleo M Intensive <span class="product-volume">500 мл</span></h3>
+
+          <!-- CHANGE HERE: product_2_accent -->
+          <p class="product-accent">Мягкий эффект — объём сохраняется, пух уходит</p>
+
+          <!-- CHANGE HERE: product_2 description items -->
+          <ul class="product-features">
+            <li><strong>Сохраняет объём</strong> — без прилизанного эффекта</li>
+            <li>Убирает сечку и пушистость надолго</li>
+            <li>Для тонких и средних волос, степень 1–4</li>
+            <li>Срок носки 3–5 месяцев</li>
+            <li>Экономичный расход</li>
+          </ul>
+
+          <!-- CHANGE HERE: product_2_price_old + product_2_price_new -->
+          <div class="product-pricing">
+            <span class="price-old-pill">288 BYN</span>
+            <span class="price-arrow-pill">→</span>
+            <span class="price-new-pill">230,40 BYN</span>
+          </div>
+          <div class="product-saving">
+            <span class="saving-amount">Вы экономите: 57,60 BYN</span>
+            <span class="saving-note">Можно вложить в расходники или доп. процедуры</span>
+          </div>
+
+          <!-- CHANGE HERE: CTA link -->
+          <a href="https://instagram.com/prokeratin_store" target="_blank" rel="noopener" class="btn btn-primary btn-product">
+            Написать «ХОЧУ» в директ
+          </a>
+
+        </div>
+      </div><!-- /product-card 2 -->
+
+    </div><!-- /products-grid -->
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  3. OFFER BLOCK (prices + timer)         ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="offer section-gap" id="offer">
+  <div class="container">
+
+    <p class="offer-urgency">Количество товаров по акции ограничено</p>
+
+    <!-- Countdown timer -->
+    <!-- CHANGE HERE: promo_end_date in data-deadline attribute (ISO 8601) -->
+    <div class="countdown-wrap" data-deadline="2026-04-26T23:59:00">
+      <p class="countdown-label">До конца акции осталось</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-days">--</span>
+          <span class="countdown-name">дней</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-hours">--</span>
+          <span class="countdown-name">часов</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-mins">--</span>
+          <span class="countdown-name">минут</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-secs">--</span>
+          <span class="countdown-name">секунд</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  4. BEFORE / AFTER BLOCK                 ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="before-after section-gap" id="before-after">
+  <div class="container">
+
+    <h2 class="section-title">Результат говорит сам за себя</h2>
+    <p class="section-sub">Реальные эффекты от составов акции</p>
+
+    <div class="ba-grid">
+
+      <!-- ── BEFORE/AFTER CARD 1 ── -->
+      <div class="ba-card">
+        <!-- CHANGE HERE: product 1 name in before/after -->
+        <div class="ba-product-label">BB Gloss Ultra</div>
+
+        <div class="ba-columns">
+          <div class="ba-col ba-before">
+            <img src="foto_do_ultra.PNG" alt="BB Gloss Ultra — до" class="ba-image">
+            <div class="ba-label">ДО</div>
+            <ul class="ba-traits ba-traits--before">
+              <li>Пушистые, пористые волосы</li>
+              <li>Сильная «ёлка»</li>
+              <li>Нет блеска</li>
+            </ul>
+          </div>
+
+          <div class="ba-divider">
+            <div class="ba-arrow">→</div>
+          </div>
+
+          <div class="ba-col ba-after">
+            <img src="foto_posle_ultra.PNG" alt="BB Gloss Ultra — после" class="ba-image">
+            <div class="ba-label ba-label--after">ПОСЛЕ</div>
+            <ul class="ba-traits ba-traits--after">
+              <li>Гладкость</li>
+              <li>Плотность</li>
+              <li>Глянец</li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /ba-card 1 -->
+
+      <!-- ── BEFORE/AFTER CARD 2 ── -->
+      <div class="ba-card">
+        <!-- CHANGE HERE: product 2 name in before/after -->
+        <div class="ba-product-label">Happy Hair Oleo M</div>
+
+        <div class="ba-columns">
+          <div class="ba-col ba-before">
+            <img src="foto_do_oleo.PNG" alt="Happy Hair Oleo M — до" class="ba-image">
+            <div class="ba-label">ДО</div>
+            <ul class="ba-traits ba-traits--before">
+              <li>Волнистые, пушащиеся волосы</li>
+              <li>Сухость, сечение</li>
+              <li>Нет объёма</li>
+            </ul>
+          </div>
+
+          <div class="ba-divider">
+            <div class="ba-arrow">→</div>
+          </div>
+
+          <div class="ba-col ba-after">
+            <img src="foto_posle_oleo.PNG" alt="Happy Hair Oleo M — после" class="ba-image">
+            <div class="ba-label ba-label--after">ПОСЛЕ</div>
+            <ul class="ba-traits ba-traits--after">
+              <li>Мягкость</li>
+              <li>Ухоженный вид</li>
+              <li>Сохранённый объём</li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /ba-card 2 -->
+
+    </div><!-- /ba-grid -->
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  5. BENEFITS BLOCK                       ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="benefits section-gap" id="benefits">
+  <div class="container">
+
+    <h2 class="section-title">Почему покупают у нас</h2>
+
+    <div class="benefits-grid">
+
+      <!-- CHANGE HERE: benefit items (icon + title + text) -->
+      <div class="benefit-item" data-animate>
+        <div class="benefit-icon">✦</div>
+        <h4 class="benefit-title">Оригинальные составы</h4>
+        <p class="benefit-text">Только сертифицированная продукция от официальных поставщиков</p>
+      </div>
+
+      <div class="benefit-item" data-animate>
+        <div class="benefit-icon">✦</div>
+        <h4 class="benefit-title">Помощь в подборе</h4>
+        <p class="benefit-text">Подберём состав под тип волос клиента и желаемый результат</p>
+      </div>
+
+      <div class="benefit-item" data-animate>
+        <div class="benefit-icon">✦</div>
+        <h4 class="benefit-title">Поддержка мастеров</h4>
+        <p class="benefit-text">Консультируем по технике работы и рекомендациям по уходу</p>
+      </div>
+
+      <div class="benefit-item" data-animate>
+        <div class="benefit-icon">✦</div>
+        <h4 class="benefit-title">Быстрая доставка</h4>
+        <p class="benefit-text">По РБ — 1–3 дня &nbsp;·&nbsp; Минск — в день заказа</p>
+      </div>
+
+    </div><!-- /benefits-grid -->
+
+    <!-- Delivery highlight -->
+    <div class="delivery-highlight">
+      <span>📍 Доставка по РБ 1–3 дня</span>
+      <span class="delivery-sep">·</span>
+      <span>📍 Минск — в день заказа</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  6. BONUS VALUE BLOCK                    ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="bonus section-gap" id="bonus">
+  <div class="container">
+
+    <h2 class="section-title">При покупке вы получаете</h2>
+    <p class="section-sub">Консультация, подбор состава и подарки при заказе</p>
+
+    <!-- Gift tiers -->
+    <div class="gift-tiers">
+
+      <div class="gift-tier gift-tier--base" data-animate>
+        <div class="gift-tier-icon">🎁</div>
+        <div class="gift-tier-badge">от 390 BYN</div>
+        <h3 class="gift-tier-title">Подарок на выбор</h3>
+        <ul class="gift-tier-list">
+          <li>JKeratin Plastic Hair Blonde (150 мл)</li>
+          <li>Шампунь глубокой очистки IQ Hair Detox (500 мл)</li>
+        </ul>
+      </div>
+
+      <div class="gift-tier gift-tier--premium" data-animate>
+        <div class="gift-tier-icon">🎁</div>
+        <div class="gift-tier-badge gift-tier-badge--premium">от 590 BYN</div>
+        <h3 class="gift-tier-title">Подарок на выбор</h3>
+        <ul class="gift-tier-list">
+          <li>Нанопластика Happy Hair Blinda Coiffer (500 мл)</li>
+          <li>Ботокс Felps Banho de Verniz (300 гр)</li>
+          <li>Система выпрямления Happy Hair Rectilinear (1 и 2 шаг)</li>
+        </ul>
+        <div class="gift-tier-bonus">
+          <span class="gift-tier-bonus-icon">🎓</span>
+          <span>Доступ к урокам от Ирины Миранюк<br /><em>по привлечению и удержанию клиентов</em></span>
+        </div>
+      </div>
+
+    </div><!-- /gift-tiers -->
+
+    <div class="bonus-list">
+      <!-- CHANGE HERE: bonus_text items -->
+      <div class="bonus-item" data-animate>
+        <div class="bonus-num">01</div>
+        <div class="bonus-content">
+          <h4>Помощь в подборе состава</h4>
+          <p>Расскажем, какой кератин подойдёт именно вашим клиентам</p>
+        </div>
+      </div>
+
+      <div class="bonus-item" data-animate>
+        <div class="bonus-num">02</div>
+        <div class="bonus-content">
+          <h4>Бесплатная консультация</h4>
+          <p>Ответим на все вопросы перед покупкой и после неё</p>
+        </div>
+      </div>
+
+      <div class="bonus-item" data-animate>
+        <div class="bonus-num">03</div>
+        <div class="bonus-content">
+          <h4>Рекомендации по работе</h4>
+          <p>Протокол нанесения, температурный режим, советы по результату</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  7. CTA BLOCK (main)                     ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="cta-section section-gap" id="cta">
+  <div class="container cta-inner">
+
+    <!-- CHANGE HERE: CTA headline -->
+    <h2 class="cta-headline">
+      Готовы к стабильному результату?<br />
+      <span class="headline-accent">Напишите «ХОЧУ» — подберём состав</span>
+    </h2>
+
+    <p class="cta-sub">
+      Подберём кератин под тип волос вашего клиента и оформим заказ.<br />
+      Ответим в течение 5–10 минут.
+    </p>
+
+    <!-- CHANGE HERE: CTA button link (3rd repeat) -->
+    <a href="https://instagram.com/prokeratin_store" target="_blank" rel="noopener" class="btn btn-primary btn-cta">
+      Написать «ХОЧУ» в директ
+    </a>
+
+    <!-- Instruction hint under CTA -->
+    <p class="btn-hint">Нажмите кнопку и напишите в директ слово «ХОЧУ» — мы подберём состав и оформим заказ</p>
+
+    <!-- Trust micro-block -->
+    <div class="trust-micro">
+      <span>⚡ Ответим в течение 5–10 минут</span>
+      <span>⚡ Поможем подобрать состав под ваш тип волос</span>
+    </div>
+
+    <!-- CHANGE HERE: promo_date_label -->
+    <p class="cta-note">Акция действует до 26.04.2026 · Количество ограничено</p>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  FOOTER                                  ║
+     ╚══════════════════════════════════════════╝ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-logo">Prokeratin</span>
+    <!-- CHANGE HERE: footer Instagram link -->
+    <a href="https://instagram.com/prokeratin_store" target="_blank" rel="noopener" class="footer-link">
+      @prokeratin_store
+    </a>
+    <!-- CHANGE HERE: footer label/geo -->
+    <span class="footer-geo">Беларусь · Доставка по РБ</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
