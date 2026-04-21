@@ -348,6 +348,15 @@ ul {
   border: 1px dashed var(--beige-mid);
 }
 
+.ba-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius);
+  display: block;
+}
+
 .placeholder-icon {
   font-size: 24px;
   opacity: 0.5;
